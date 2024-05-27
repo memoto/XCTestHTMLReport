@@ -118,5 +118,5 @@ jobs:
           commit-message: "${{ steps.version.outputs.version }} version bump"
           branch: "version-bump/${{ steps.version.outputs.version }}"
           add-paths: Sources/XCTestHTMLReport/Version.swift
-          reviewers: tylervick
+          reviewers: memoto
           base: main

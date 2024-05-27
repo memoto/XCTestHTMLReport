@@ -99,8 +99,10 @@ class ResultFile {
         return logSection.formatEmittedOutput().data(using: .utf8)
     }
 
+    /// Encodes the root invocation record and any available referenced objects
+    /// - Returns: A json blob of the invocation record's json structure
     func exportJson() -> Data? {
-        file.exportRecursiveJson()
+        fatalError("JSON export is temporarily disabled")
     }
 }
 
